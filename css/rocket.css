@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(106, 27, 121);
+  background: linear-gradient(
+    3deg,
+    rgba(106, 27, 121, 1) 2%,
+    rgba(38, 0, 67, 1) 42%,
+    rgba(3, 0, 34, 1) 83%
+  );
+
+  /* Colores */
+  --rocket-fuselage: #00b0ad;
+  --rocket-window: #002338;
+  --rocket-tank: #9fddf9;
+  --rocket-booster: #00587c;
+  --rocket-wing: #008790;
+  --rocket-engine__merlin: #00314a;
+  --rocket-fire: #fcb040;
+  --rocket-fire2: #f58020;
+  --rocket-light: rgba(255, 255, 255, 0.6);
+  --planet: rgba(241, 90, 69, 0.8);
+  --planet-shadown: rgba(241, 90, 69, 0.3);
+  --planet-crater: rgba(192, 17, 43, 0.8);
+  --moon: rgba(117, 117, 117, 0.8);
+  --moon-shadown: rgba(117, 117, 117, 0.3);
+  --moon-crater: rgba(153, 153, 153, 0.8);
+  --stars: #fff79b;
+}
+
+.rocket {
+  position: fixed;
+  top: 25%;
+  left: calc(50vw - 40px);
+}
+
+.rocket-fuselage {
+  width: 90px;
+  height: 210px;
+  background-color: var(--rocket-fuselage);
+  border-radius: 50px 50px 0 0;
+  position: relative;
+}
+
+.rocket-light1 {
+  width: 35px;
+  height: 35px;
+  border-top: 8px solid var(--rocket-light);
+  border-right: 8px solid var(--rocket-light);
+  border-top-right-radius: 35px;
+  opacity: 0.6;
+  position: absolute;
+  top: 5px;
+  right: 9px;
+}
+
+.rocket-light1__circle1 {
+  width: 8px;
+  height: 8px;
+  background: var(--rocket-light);
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+}
+
+.rocket-light1__circle2 {
+  width: 8px;
+  height: 8px;
+  background: var(--rocket-light);
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+}
+
+.rocket-light2 {
+  width: 13px;
+  height: 15px;
+  border-top: 7px solid var(--rocket-light);
+  border-right: 7px solid var(--rocket-light);
+  border-top-right-radius: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.rocket-light2__circle1 {
+  width: 7px;
+  height: 7px;
+  background: var(--rocket-light);
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+}
+
+.rocket-light2__circle2 {
+  width: 7px;
+  height: 7px;
+  background: var(--rocket-light);
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  bottom: -7px;
+  right: -7px;
+}
+
+.rocket-window {
+  width: 40px;
+  height: 80px;
+  background-color: var(--rocket-window);
+  border-radius: 20px;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+
+.rocket-window__light1 {
+  width: 7px;
+  height: 7px;
+  background-color: var(--rocket-light);
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 16.5px;
+}
+
+.rocket-window__light2 {
+  width: 11px;
+  height: 11px;
+  background-color: var(--rocket-light);
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  left: 22px;
+}
+
+.rocket-tank__left {
+  width: 45px;
+  height: 90px;
+  background-color: var(--rocket-tank);
+  border-radius: 25px;
+  position: absolute;
+  left: -22.5px;
+  bottom: -15px;
+}
+
+.rocket-tank__right {
+  width: 45px;
+  height: 90px;
+  background-color: var(--rocket-tank);
+  border-radius: 25px;
+  position: absolute;
+  right: -22.5px;
+  bottom: -15px;
+}
+
+.rocket-booster__left {
+  width: 20px;
+  height: 115px;
+  background-color: var(--rocket-booster);
+  border-radius: 20px 0 0 0;
+  position: absolute;
+  left: -19px;
+  top: 40px;
+  z-index: -1;
+}
+
+.rocket-booster__right {
+  width: 20px;
+  height: 115px;
+  background-color: var(--rocket-booster);
+  border-radius: 0 20px 0 0;
+  position: absolute;
+  right: -19px;
+  top: 40px;
+  z-index: -1;
+}
+
+.rocket-minibooster__left {
+  width: 12px;
+  height: 50px;
+  background-color: var(--rocket-booster);
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  left: -55px;
+  bottom: 30px;
+  z-index: -2;
+}
+
+.rocket-minibooster__right {
+  width: 12px;
+  height: 50px;
+  background-color: var(--rocket-booster);
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  right: -55px;
+  bottom: 25px;
+  z-index: -2;
+}
+
+.rocket-wing__left {
+  width: 60px;
+  height: 100px;
+  background-color: var(--rocket-wing);
+  border-radius: 40px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: -50px;
+  bottom: 0;
+  z-index: -2;
+}
+
+.rocket-wing__right {
+  width: 60px;
+  height: 100px;
+  background-color: var(--rocket-wing);
+  border-radius: 40px;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: -50px;
+  bottom: -5px;
+  z-index: -2;
+}
+
+.rocket-engine {
+  width: 100px;
+  height: 25px;
+  background-color: var(--rocket-booster);
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  left: -5px;
+  bottom: -25px;
+  z-index: -1;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+
+.rocket-engine__merlin {
+  min-width: 7px;
+  height: 16px;
+  background-color: var(--rocket-engine__merlin);
+  border-radius: 0 0 5px 5px;
+}
+
+.rocket-fire {
+  width: 70px;
+  position: absolute;
+  left: 10px;
+  bottom: -23px;
+  z-index: -2;
+}
+
+.rocket-fire__flame1 {
+  width: 70px;
+  height: 630px;
+  background-color: var(--rocket-fire);
+  border-radius: 0 0 35px 35px;
+  opacity: 0.4;
+  position: absolute;
+  z-index: -2;
+}
+.rocket-fire__flame2 {
+  width: 35px;
+  height: 630px;
+  background-color: var(--rocket-fire);
+  border-radius: 0 0 17px 17px;
+  opacity: 0.4;
+  position: absolute;
+  left: 17.5px;
+  z-index: -1;
+}
+
+.rocket-fire__flame3 {
+  width: 26px;
+  height: 200px;
+  background-color: var(--rocket-fire);
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  left: 5px;
+}
+
+.rocket-fire__flame4 {
+  width: 26px;
+  height: 180px;
+  background-color: var(--rocket-fire);
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  right: 5px;
+}
+
+.rocket-fire__flame5 {
+  width: 18px;
+  height: 230px;
+  background-color: var(--rocket-fire2);
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  left: 27px;
+  z-index: -1;
+}
+
+.rocket-fire__flame6 {
+  width: 8px;
+  height: 80px;
+  background-color: var(--rocket-fire2);
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  left: 9px;
+}
+
+.rocket-fire__flame7 {
+  width: 5px;
+  height: 70px;
+  background-color: var(--rocket-fire);
+  border-radius: 15px;
+  position: absolute;
+  left: -8px;
+  top: 80px;
+}
+
+.rocket-fire__flame8 {
+  width: 8px;
+  height: 70px;
+  background-color: var(--rocket-fire);
+  border-radius: 15px;
+  position: absolute;
+  right: -11px;
+  top: 20px;
+}

@@ -1,0 +1,149 @@
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.stars-group1 {
+  position: relative;
+  top: 5vw;
+  left: 20vw;
+}
+
+.stars-group1__1 {
+  width: 1.2vw;
+  height: 1.2vw;
+  background-color: var(--stars);
+  border-radius: 50%;
+}
+
+.stars-group1__2 {
+  width: 0.6vw;
+  height: 0.6vw;
+  background-color: var(--stars);
+  border-radius: 50%;
+  position: absolute;
+  top: 2vw;
+  left: 6vw;
+}
+
+.stars-group1__3 {
+  width: 1.8vw;
+  height: 1.8vw;
+  border: 0.6vw solid var(--stars);
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5vw;
+  left: 9vw;
+}
+
+.stars-group1__4 {
+  width: 0.9vw;
+  height: 0.9vw;
+  background-color: var(--stars);
+  border-radius: 50%;
+  position: absolute;
+  top: 6vw;
+  left: 3vw;
+}
+
+.stars-group2 {
+  position: relative;
+  top: 5vw;
+  left: 70vw;
+}
+
+.stars-group2__1 {
+  width: 1.2vw;
+  height: 1.2vw;
+  background-color: var(--stars);
+  border-radius: 50%;
+}
+
+.stars-group2__2 {
+  width: 0.6vw;
+  height: 0.6vw;
+  background-color: var(--stars);
+  border-radius: 50%;
+  position: absolute;
+  top: -2.3vw;
+  left: 20vw;
+}
+
+.stars-group2__3 {
+  width: 1.8vw;
+  height: 1.8vw;
+  border: 0.6vw solid var(--stars);
+  border-radius: 50%;
+  position: absolute;
+  top: 18vw;
+  left: 9vw;
+}
+
+.stars-group2__4 {
+  width: 0.9vw;
+  height: 0.9vw;
+  background-color: var(--stars);
+  border-radius: 50%;
+  position: absolute;
+  top: 14vw;
+  left: 3vw;
+}
+
+.stars-group3 {
+  position: absolute;
+  top: 55vh;
+  left: 20vw;
+}
+
+.stars-group3__1 {
+  width: 1.2vw;
+  height: 1.2vw;
+  background-color: var(--stars);
+  border-radius: 50%;
+}
+
+.stars-group3__2 {
+  width: 0.6vw;
+  height: 0.6vw;
+  background-color: var(--stars);
+  border-radius: 50%;
+  position: absolute;
+  top: 20vw;
+  left: 20vw;
+}
+
+.stars-group3__3 {
+  width: 1.8vw;
+  height: 1.8vw;
+  border: 0.6vw solid var(--stars);
+  border-radius: 50%;
+  position: absolute;
+  top: 18vw;
+  left: -15vw;
+}
+
+.stars-group4 {
+  position: absolute;
+  top: 80vh;
+  left: 70vw;
+}
+
+.stars-group4__1 {
+  width: 1.2vw;
+  height: 1.2vw;
+  background-color: var(--stars);
+  border-radius: 50%;
+}
+
+.stars-group4__2 {
+  width: 1.8vw;
+  height: 1.8vw;
+  border: 0.6vw solid var(--stars);
+  border-radius: 50%;
+  position: absolute;
+  top: 3vw;
+  left: 15vw;
+}

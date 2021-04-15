@@ -1,0 +1,72 @@
+.moon {
+  position: absolute;
+  top: 5vh;
+  right: 27vw;
+  z-index: -2;
+}
+
+.moon-shadown1 {
+  width: 18.75vw;
+  height: 18.75vw;
+  border-radius: 50%;
+  background-color: var(--moon-shadown);
+  position: absolute;
+}
+
+.moon-shadown2 {
+  width: 14.375vw;
+  height: 14.375vw;
+  border-radius: 50%;
+  background-color: var(--moon-shadown);
+  position: absolute;
+  top: calc((18.75vw / 2) - (14.375vw / 2));
+  left: calc((18.75vw / 2) - (14.375vw / 2));
+}
+
+.moon-shadown3 {
+  width: 11.25vw;
+  height: 11.25vw;
+  border-radius: 50%;
+  background-color: var(--moon-shadown);
+  position: absolute;
+  top: calc((14.375vw / 2) - (11.25vw / 2));
+  left: calc((14.375vw / 2) - (11.25vw / 2));
+}
+
+.moon-surface {
+  width: 9.375vw;
+  height: 9.375vw;
+  border-radius: 50%;
+  background-color: var(--moon);
+  position: absolute;
+  top: calc((11.25vw / 2) - (9.375vw / 2));
+  left: calc((11.25vw / 2) - (9.375vw / 2));
+}
+
+.moon-crater1 {
+  width: 2.34375vw;
+  height: 2.34375vw;
+  background-color: var(--moon-crater);
+  border-radius: 50%;
+  position: absolute;
+  top: 1.875vw;
+  left: 4.6875vw;
+}
+.moon-crater2 {
+  width: 1.40625vw;
+  height: 1.40625vw;
+  background-color: var(--moon-crater);
+  border-radius: 50%;
+  position: absolute;
+  top: 5.625vw;
+  left: 3.75vw;
+}
+.moon-crater3 {
+  width: 0.703125vw;
+  height: 0.703125vw;
+  background-color: var(--moon-crater);
+  border-radius: 50%;
+  position: absolute;
+  top: 4.21875vw;
+  left: 2.34375vw;
+}

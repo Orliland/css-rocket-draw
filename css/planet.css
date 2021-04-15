@@ -1,0 +1,90 @@
+.planet {
+  position: absolute;
+  bottom: 40vh;
+  left: 10vw;
+  z-index: -2;
+}
+
+.planet-shadown1 {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  background-color: var(--planet-shadown);
+  position: absolute;
+}
+
+.planet-shadown2 {
+  width: 18.75vw;
+  height: 18.75vw;
+  border-radius: 50%;
+  background-color: var(--planet-shadown);
+  position: absolute;
+  top: calc((25vw / 2) - (18.75vw / 2));
+  left: calc((25vw / 2) - (18.75vw / 2));
+}
+
+.planet-shadown3 {
+  width: 14.375vw;
+  height: 14.375vw;
+  border-radius: 50%;
+  background-color: var(--planet-shadown);
+  position: absolute;
+  top: calc((18.75vw / 2) - (14.375vw / 2));
+  left: calc((18.75vw / 2) - (14.375vw / 2));
+}
+
+.planet-surface {
+  width: 11.25vw;
+  height: 11.25vw;
+  border-radius: 50%;
+  background-color: var(--planet);
+  position: absolute;
+  top: calc((14.375vw / 2) - (11.25vw / 2));
+  left: calc((14.375vw / 2) - (11.25vw / 2));
+}
+
+.planet-crater1 {
+  width: 3.125vw;
+  height: 3.125vw;
+  background-color: var(--planet-crater);
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5vw;
+  left: 6.25vw;
+}
+.planet-crater2 {
+  width: 1.875vw;
+  height: 1.875vw;
+  background-color: var(--planet-crater);
+  border-radius: 50%;
+  position: absolute;
+  top: 7.5vw;
+  left: 5vw;
+}
+.planet-crater3 {
+  width: 1.25vw;
+  height: 1.25vw;
+  background-color: var(--planet-crater);
+  border-radius: 50%;
+  position: absolute;
+  top: 6.875vw;
+  left: 7.5vw;
+}
+.planet-crater4 {
+  width: 0.9375vw;
+  height: 0.9375vw;
+  background-color: var(--planet-crater);
+  border-radius: 50%;
+  position: absolute;
+  top: 5.625vw;
+  left: 3.125vw;
+}
+.planet-crater5 {
+  width: 1.25vw;
+  height: 1.25vw;
+  background-color: var(--planet-crater);
+  border-radius: 50%;
+  position: absolute;
+  top: 3.75vw;
+  left: 1.25vw;
+}

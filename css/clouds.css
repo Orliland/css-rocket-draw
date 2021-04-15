@@ -1,0 +1,119 @@
+.cloud-left {
+  position: absolute;
+  left: 7vw;
+  top: 65vh;
+  z-index: -3;
+}
+
+.cloud-left__bar1 {
+  width: 70vw;
+  height: 5vw;
+  background-color: rgba(14, 12, 41, 0.7);
+  border-radius: 2vw;
+  position: relative;
+  left: -35vw;
+}
+
+.cloud-left__container {
+  width: 35vw;
+  height: 5vw;
+  position: relative;
+}
+
+.cloud-left__bar2 {
+  position: absolute;
+  width: 35vw;
+  height: 5vw;
+  overflow: hidden;
+}
+
+.cloud-left__bar2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+  width: 8vw;
+  height: 5vw;
+  box-shadow: 0px 0px 50px 9.8vw rgba(14, 12, 41, 0.7);
+}
+
+.cloud-left__bar2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-left-radius: 5vw;
+  border-bottom-left-radius: 5vw;
+  width: 8vw;
+  height: 5vw;
+  box-shadow: 0px 0px 50px 9.8vw rgba(14, 12, 41, 0.7);
+}
+
+.cloud-left__bar3 {
+  width: 70vw;
+  height: 5vw;
+  background-color: rgba(14, 12, 41, 0.7);
+  border-radius: 2vw;
+}
+
+.cloud-right {
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  z-index: -3;
+}
+
+.cloud-right__bar1 {
+  width: 40vw;
+  height: 3vw;
+  background-color: rgba(14, 12, 41, 0.7);
+  border-radius: 2vw;
+}
+
+.cloud-right__container {
+  width: 35vw;
+  height: 3vw;
+  position: relative;
+}
+
+.cloud-right__bar2 {
+  position: absolute;
+  width: 35vw;
+  height: 3vw;
+  overflow: hidden;
+}
+
+.cloud-right__bar2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+  width: 8vw;
+  height: 3vw;
+  box-shadow: 0px 0px 50px 9.8vw rgba(14, 12, 41, 0.7);
+}
+
+.cloud-right__bar2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-left-radius: 5vw;
+  border-bottom-left-radius: 5vw;
+  width: 8vw;
+  height: 3vw;
+  box-shadow: 0px 0px 50px 9.8vw rgba(14, 12, 41, 0.7);
+}
+
+.cloud-right__bar3 {
+  width: 40vw;
+  height: 3vw;
+  background-color: rgba(14, 12, 41, 0.7);
+  border-radius: 2vw;
+  position: relative;
+  right: 5vw;
+}
